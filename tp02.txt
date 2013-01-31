@@ -1,0 +1,32 @@
+SPLETE Cesar
+SAMSON Jeremie
+Master Informatique
+BDA - tp02
+
+Exerice 1
+Question 1
+a1.xml 
+	d1.dtd : OK
+	d2.dtd : KO
+	d3.dtd : KO
+a2.xml 
+	d1.dtd : OK
+	d2.dtd : OK
+	d3.dtd : OK
+a3.xml 
+	d1.dtd : KO
+	d2.dtd : OK
+	d3.dtd : KO
+
+
+
+Exerice 2
+fichiers univ.xml et univ.dtd
+
+
+Exerice 3
+question 1
+fichiers transpole.xml / transpole/dtd
+
+question 2
+fichier maisons.dtd

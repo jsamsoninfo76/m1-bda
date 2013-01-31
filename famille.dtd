@@ -1,0 +1,4 @@
+<!ELEMENT famille (nom, personne*) >
+  <!ELEMENT nom (#PCDATA) >
+  <!ELEMENT personne (prenom, age, (poids-lb | poids-kg), taille?) >
+    <!ATTLIST personne pnumber ID #REQUIRED>
