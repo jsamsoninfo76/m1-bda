@@ -1,0 +1,46 @@
+<!ELEMENT transpole (itineraire)* >
+  <!ELEMENT itineraire (depart,arrivee, mode,preferences,vitessePieton,trajet) >
+    <!ATTLIST itineraire date CDATA #REQUIRED>
+    <!ATTLIST itineraire heure CDATA #REQUIRED>
+  <!ELEMENT depart (#PCDATA) >
+    <!ATTLIST depart ville CDATA #REQUIRED>
+  <!ELEMENT arrivee (#PCDATA) >
+    <!ATTLIST arrivee ville CDATA #REQUIRED>
+  <!ELEMENT mode (metro?,bus?,tramway?,car?) >
+  <!ELEMENT preferences (vitesse) >
+  <!ELEMENT vitesse (#PCDATA) >
+  <!ELEMENT vitessePieton (#PCDATA) >
+  <!ELEMENT trajet (pieton | bus | correspondance | metro | tramway | car)* >
+    <!ATTLIST trajet duree CDATA #REQUIRED>
+    <!ATTLIST trajet unite CDATA #REQUIRED>
+  <!ELEMENT metro (#PCDATA) >
+    <!ATTLIST metro duree CDATA #IMPLIED>
+    <!ATTLIST metro ligne CDATA #IMPLIED>
+    <!ATTLIST metro heure CDATA #IMPLIED>
+    <!ATTLIST metro direction CDATA #IMPLIED>
+    <!ATTLIST metro ville_arrivee CDATA #IMPLIED>
+  <!ELEMENT bus (#PCDATA) >
+    <!ATTLIST bus duree CDATA #IMPLIED>
+    <!ATTLIST bus ligne CDATA #IMPLIED>
+    <!ATTLIST bus heure CDATA #IMPLIED>
+    <!ATTLIST bus direction CDATA #IMPLIED>
+    <!ATTLIST bus ville_arrivee CDATA #IMPLIED>
+  <!ELEMENT tramway (#PCDATA) >
+    <!ATTLIST tramway duree CDATA #IMPLIED>
+    <!ATTLIST tramway ligne CDATA #IMPLIED>
+    <!ATTLIST tramway heure CDATA #IMPLIED>
+    <!ATTLIST tramway direction CDATA #IMPLIED>
+    <!ATTLIST tramway ville_arrivee CDATA #IMPLIED>
+  <!ELEMENT car (#PCDATA) >
+    <!ATTLIST car duree CDATA #IMPLIED>
+    <!ATTLIST car ligne CDATA #IMPLIED>
+    <!ATTLIST car heure CDATA #IMPLIED>
+    <!ATTLIST car direction CDATA #IMPLIED>
+    <!ATTLIST car ville_arrivee CDATA #IMPLIED>
+  <!ELEMENT pieton (#PCDATA) >
+    <!ATTLIST pieton duree CDATA #REQUIRED>
+    <!ATTLIST pieton ville_arrivee CDATA #REQUIRED>
+    <!ATTLIST pieton heure CDATA #REQUIRED>
+  <!ELEMENT correspondance EMPTY >
+    <!ATTLIST correspondance duree CDATA #REQUIRED>
+    <!ATTLIST correspondance heure CDATA #REQUIRED>

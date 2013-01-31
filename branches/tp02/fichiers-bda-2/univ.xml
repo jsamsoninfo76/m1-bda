@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE universite SYSTEM "univ.dtd">
+
+
+<universite>
+	<enseignant>
+		<nom>Toto</nom>
+		<matiere>bases de données</matiere>
+		<matiere>site web</matiere>
+		<cours_enseign id_cours="LI345"/>
+		<cours_enseign id_cours="LI349"/>
+	</enseignant>
+	<enseignant>
+		<nom>Titi</nom>
+		<matiere>langage</matiere>
+		<cours_enseign id_cours="LI349"/>
+	</enseignant>
+	<cours>
+		<code id_cours="LI345"/>
+		<titre>bases de données et sites Web</titre>
+		<salle_cours numero="Amphi_B1"/>
+	</cours>
+	<cours>
+		<code id_cours="LI349"/>
+		<titre>compilation</titre>
+		<salle_cours numero="Amphi_B2"/>
+	</cours>
+	<salle numero="Amphi_B1"/>
+	<salle numero="Amphi_B2"/>
+	<etudiant>
+		<nom>Jermiiiiiie</nom>
+		<numero>12</numero>
+		<cours_suivi id_cours="LI349"/>
+	</etudiant>
+		
+</universite>

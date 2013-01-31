@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transpole SYSTEM "transpole.dtd">
+<!--<?xml-stylesheet href="stylesheets/transpole.css" type="text/css"?> -->
+
+<!-- New document created with EditiX at Mon Jan 28 20:45:38 CET 2013 -->
+
+
+<transpole>
+	<itineraire date="Mardi 22 janvier 2013" heure="12h35">
+		<depart ville="Seclin">Centre Hospitalier</depart>
+		<arrivee ville="Roubaix">Avenue Motte</arrivee>
+		<mode>
+			<metro/>
+			<bus/>
+			<tramway/>
+			<car/>
+		</mode>
+		<preferences>
+			<vitesse>Rapide</vitesse>
+		</preferences>
+		<vitessePieton>Normale</vitessePieton>
+		<trajet duree="87" unite="minutes">
+			<pieton duree="13" ville_arrivee="Seclin" heure="">Hôtel de ville</pieton>
+			<bus duree="23" ligne="52" heure="14h51" direction="Lille - Porte des postes" ville_arrivee="Lille">Porte des postes</bus>
+			<correspondance duree="4" heure="15h14"/>
+			<metro duree="3" ligne="1" heure="15h18" direction="Villeneuve d’Ascq - 4 Cantons Grand Stade" ville_arrivee="Lille">Porte des postes</metro>
+			<correspondance duree="6" heure="15h21"/>
+			<metro duree="25" ligne="2" heure="15h27" direction="Tourcoing - CH Dron" ville_arrivee="Roubaix">Epeule Montesquieu</metro>
+			<correspondance duree="4" heure="15h52"/>
+			<bus duree="9" ligne="52" heure="15h56" direction="Roubaix - fraternité" ville_arrivee="Roubaix">Porte des postes</bus>
+		</trajet>
+	</itineraire>
+</transpole>

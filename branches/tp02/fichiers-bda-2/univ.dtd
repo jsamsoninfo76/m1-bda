@@ -1,0 +1,18 @@
+<!ELEMENT universite (enseignant*,cours*,salle*, etudiant*)*>
+  <!ELEMENT enseignant (nom, matiere*, cours_enseign*)>
+  <!ELEMENT cours (code, titre, salle_cours)>
+  <!ELEMENT salle EMPTY>
+    <!ATTLIST salle numero ID #REQUIRED>
+  <!ELEMENT etudiant (nom,numero,cours_suivi*)>
+  <!ELEMENT nom (#PCDATA) >
+  <!ELEMENT matiere (#PCDATA) >
+  <!ELEMENT titre (#PCDATA) >
+  <!ELEMENT numero (#PCDATA) >
+  <!ELEMENT code EMPTY >
+    <!ATTLIST code id_cours ID #REQUIRED>
+  <!ELEMENT cours_suivi EMPTY >
+    <!ATTLIST cours_suivi id_cours IDREF #REQUIRED>
+  <!ELEMENT cours_enseign EMPTY >
+    <!ATTLIST cours_enseign id_cours IDREF #REQUIRED>
+  <!ELEMENT salle_cours EMPTY >
+    <!ATTLIST salle_cours numero IDREF #REQUIRED>
